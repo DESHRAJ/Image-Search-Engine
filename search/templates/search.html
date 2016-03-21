@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CID</title>
+	  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+  <br>
+  <br>
+<div class="row">
+  <form class="col s12" method="post" action=".">
+  <h1>C.I.D</h1>
+    {% csrf_token %}
+    <div class="input-field col s6 m6 l6">
+      <input id="tag" type="text" class="validate white">
+      <label for="tag" class="active">Enter Comma separated tags to Search</label>
+    </div>
+    <div class="input-field col">
+      <input type="submit" class="black waves-effect waves-light btn-large">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
